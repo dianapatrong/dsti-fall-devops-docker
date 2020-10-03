@@ -2,6 +2,7 @@ version: '3'
 services:
   web:
     image: hello-world-compose-web-app:latest
+    # build: .  <-- this will use the Dockerfile in the current directory, it can be used instead of building the image
     ports:
       - "5000:5000"
   redis:
