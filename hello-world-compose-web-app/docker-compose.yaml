@@ -6,3 +6,6 @@ services:
       - "5000:5000"
   redis:
     image: "redis:alpine"
+    volumes:
+      - $PWD/redis-data:/data
+
